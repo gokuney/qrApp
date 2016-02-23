@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= "QR Code App"
+  p Scan this code below or hit reset to generate a new one
+  p
+  img( src="#{qr}")
+  p Readable :  #{readable}
+  p UNIX : #{ts}
+  p
+  button( onClick="window.location.reload();" ) Generate New
